@@ -15,8 +15,6 @@ services:
       - './docker/prometheus/data:/prometheus'
     depends_on:
       - cadvisor
-    networks:
-      - monitoring
 
   nginx-srv-1:
     env_file:
@@ -48,8 +46,6 @@ services:
       - /dev/disk/:/dev/disk:ro
     depends_on:
       - redis
-    networks:
-      - monitoring
 
   redis:
     env_file:
@@ -64,7 +60,3 @@ services:
     environment:
       - REDIS_PASSWORD=${REDIS_PASSWORD}
       - REDIS_PORT=${REDIS_PORT}
-
-networks:
-  monitoring:
-    driver: bridge
