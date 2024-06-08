@@ -6,6 +6,7 @@ services:
       - .env
     container_name: eu-prometheus
     image: eu-prometheus
+    restart: unless-stopped
     build:
       context: ./docker/prometheus
     ports:
@@ -36,6 +37,7 @@ services:
       - .env
     image: gcr.io/cadvisor/cadvisor:latest
     container_name: cadvisor
+    restart: unless-stopped
     ports:
       - "${CADVISOR_PORT}:8080"
     volumes:
@@ -52,7 +54,7 @@ services:
       - .env
     container_name: redis
     image: redis:6.0.7
-    restart: always
+    restart: unless-stopped
     ports:
       - "${REDIS_PORT}:6379"
     volumes:
@@ -60,3 +62,14 @@ services:
     environment:
       - REDIS_PASSWORD=${REDIS_PASSWORD}
       - REDIS_PORT=${REDIS_PORT}
+
+  grafana:
+    env_file:
+      - .env
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - '${GRAFANA_PORT}:3000'
+    volumes:
+      - './docker/grafana/data:/var/lib/grafana'
