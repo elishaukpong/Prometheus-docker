@@ -73,3 +73,6 @@ services:
       - '${GRAFANA_PORT}:3000'
     volumes:
       - './docker/grafana/data:/var/lib/grafana'
+      - "./docker/grafana:/etc/grafana"
+    depends_on:
+      - prometheus
