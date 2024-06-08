@@ -14,6 +14,7 @@ The docker file has 4 services running
 - Nginx
 - Cadvisor
 - Redis
+- Grafana
 
 ### TO SETUP
 
@@ -24,8 +25,18 @@ The docker file has 4 services running
 - open `localhost:${SERVICE_1_PORT}/index.html` on your browser to access the simple html document on the nginx
 - open `localhost:${PROMETHEUS_PORT}` on your browser to access the prometheus dashboard
 - open `localhost:${CADVISOR_PORT}` on your browser to access the cadvisor dashboard
+- open `localhost:${GRAFANA_PORT}` on your browser to access the grafana dashboard
 
+### PROMETHEUS
+With the current setup at `./docker/prometheus/config/prometheus.yml` this monitoring service is currently getting metrics from:
+- Prometheus (itself)
+- Cadvisor
+- Grafana
 
+### GRAFANA
+With the current setup at `./docker/grafana/provisioning/datasources/datasources.yml` this visualization service is currently getting metrics from:
+- Prometheus 
+- 
 ## Note
 
 Each service has a folder inside the docker folder and contains config where neccessary, 
@@ -34,6 +45,5 @@ you can play around with it as you see fit.
 ### TO BE ADDED
 
  - Alerts
- - Grafana
  - Rules
  - Percona
