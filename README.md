@@ -17,10 +17,9 @@ The docker file has 4 services running
 
 ### TO SETUP
 
-To run this repo,
 - Clone Repo
 - copy `.env.example` file to `.env` as it is used by the docker services.
-- Check and confirm that needed ports are open, available and accessible on your host machine
+- Check and confirm that needed exposable ports are open, available and accessible on your host machine
 - run `docker-composer up -d` and wait for the build to be complete
 - open `localhost:${SERVICE_1_PORT}/index.html` on your browser to access the simple html document on the nginx
 - open `localhost:${PROMETHEUS_PORT}` on your browser to access the prometheus dashboard
