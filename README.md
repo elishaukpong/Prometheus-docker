@@ -8,7 +8,7 @@ These metrics is then fed into prometheus and can be monitored from the dashboar
 
 ## Dockerfile
 
-The docker file has 4 services running
+The docker file has 5 services running
     
 - Prometheus
 - Nginx
