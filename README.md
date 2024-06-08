@@ -36,7 +36,7 @@ With the current setup at `./docker/prometheus/config/prometheus.yml` this monit
 ### GRAFANA
 With the current setup at `./docker/grafana/provisioning/datasources/datasources.yml` this visualization service is currently getting metrics from:
 - Prometheus 
-- 
+
 ## Note
 
 Each service has a folder inside the docker folder and contains config where neccessary, 
