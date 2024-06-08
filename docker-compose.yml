@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  prometheus:
+    container_name: eu-prometheus
+    image: eu-prometheus
+    build:
+      context: ./docker/prometheus
+    ports:
+      - 9090:9090
