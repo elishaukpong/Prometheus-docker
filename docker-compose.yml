@@ -2,6 +2,8 @@ version: "3.9"
 
 services:
   prometheus:
+    env_file:
+      - .env
     container_name: eu-prometheus
     image: eu-prometheus
     build:
@@ -11,6 +13,10 @@ services:
     volumes:
       - './docker/prometheus/config:/etc/prometheus'
       - './docker/prometheus/data:/prometheus'
+    depends_on:
+      - cadvisor
+    networks:
+      - monitoring
 
   nginx-srv-1:
     env_file:
@@ -28,10 +34,12 @@ services:
       - "./docker/web/:/var/www/html"
 
   cadvisor:
+    env_file:
+      - .env
     image: gcr.io/cadvisor/cadvisor:latest
     container_name: cadvisor
     ports:
-      - ${CADVISOR_PORT}:8080
+      - "${CADVISOR_PORT}:8080"
     volumes:
       - /:/rootfs:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
@@ -40,8 +48,12 @@ services:
       - /dev/disk/:/dev/disk:ro
     depends_on:
       - redis
+    networks:
+      - monitoring
 
   redis:
+    env_file:
+      - .env
     container_name: redis
     image: redis:6.0.7
     restart: always
@@ -52,3 +64,7 @@ services:
     environment:
       - REDIS_PASSWORD=${REDIS_PASSWORD}
       - REDIS_PORT=${REDIS_PORT}
+
+networks:
+  monitoring:
+    driver: bridge
