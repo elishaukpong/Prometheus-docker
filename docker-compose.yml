@@ -8,3 +8,6 @@ services:
       context: ./docker/prometheus
     ports:
       - 9090:9090
+    volumes:
+      - './docker/prometheus/config:/etc/prometheus/'
+      - './docker/prometheus/data:/prometheus'

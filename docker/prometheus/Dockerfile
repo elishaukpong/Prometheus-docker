@@ -1,1 +1,1 @@
-FROM:
+FROM prom/prometheus
