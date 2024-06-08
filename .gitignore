@@ -2,3 +2,4 @@
 docker/prometheus/data
 docker/nginx-srv-1/logs
 docker/redis/data
+docker/grafana/data
