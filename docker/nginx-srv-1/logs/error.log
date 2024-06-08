@@ -1,0 +1,108 @@
+2024/06/06 12:59:29 [notice] 1#1: using the "epoll" event method
+2024/06/06 12:59:29 [notice] 1#1: nginx/1.27.0
+2024/06/06 12:59:29 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/06/06 12:59:29 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/06/06 12:59:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/06/06 12:59:29 [notice] 1#1: start worker processes
+2024/06/06 12:59:29 [notice] 1#1: start worker process 27
+2024/06/06 12:59:29 [notice] 1#1: start worker process 28
+2024/06/06 12:59:29 [notice] 1#1: start worker process 29
+2024/06/06 12:59:29 [notice] 1#1: start worker process 30
+2024/06/06 12:59:29 [notice] 1#1: start worker process 31
+2024/06/06 12:59:29 [notice] 1#1: start worker process 32
+2024/06/06 13:08:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/06/06 13:08:05 [notice] 28#28: gracefully shutting down
+2024/06/06 13:08:05 [notice] 28#28: exiting
+2024/06/06 13:08:05 [notice] 27#27: gracefully shutting down
+2024/06/06 13:08:05 [notice] 29#29: gracefully shutting down
+2024/06/06 13:08:05 [notice] 29#29: exiting
+2024/06/06 13:08:05 [notice] 31#31: gracefully shutting down
+2024/06/06 13:08:05 [notice] 32#32: gracefully shutting down
+2024/06/06 13:08:05 [notice] 32#32: exiting
+2024/06/06 13:08:05 [notice] 30#30: gracefully shutting down
+2024/06/06 13:08:05 [notice] 28#28: exit
+2024/06/06 13:08:05 [notice] 27#27: exiting
+2024/06/06 13:08:05 [notice] 29#29: exit
+2024/06/06 13:08:05 [notice] 31#31: exiting
+2024/06/06 13:08:05 [notice] 32#32: exit
+2024/06/06 13:08:05 [notice] 30#30: exiting
+2024/06/06 13:08:05 [notice] 27#27: exit
+2024/06/06 13:08:05 [notice] 31#31: exit
+2024/06/06 13:08:05 [notice] 30#30: exit
+2024/06/06 13:08:05 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/06/06 13:08:05 [notice] 1#1: worker process 29 exited with code 0
+2024/06/06 13:08:05 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/06 13:08:05 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/06/06 13:08:05 [notice] 1#1: worker process 28 exited with code 0
+2024/06/06 13:08:05 [notice] 1#1: worker process 32 exited with code 0
+2024/06/06 13:08:05 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/06 13:08:05 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/06/06 13:08:05 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/06/06 13:08:05 [notice] 1#1: worker process 30 exited with code 0
+2024/06/06 13:08:05 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/06 13:08:05 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/06/06 13:08:05 [notice] 1#1: worker process 27 exited with code 0
+2024/06/06 13:08:05 [notice] 1#1: worker process 31 exited with code 0
+2024/06/06 13:08:05 [notice] 1#1: exit
+2024/06/08 16:07:03 [notice] 1#1: using the "epoll" event method
+2024/06/08 16:07:03 [notice] 1#1: nginx/1.27.0
+2024/06/08 16:07:03 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/06/08 16:07:03 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/06/08 16:07:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/06/08 16:07:03 [notice] 1#1: start worker processes
+2024/06/08 16:07:03 [notice] 1#1: start worker process 28
+2024/06/08 16:07:03 [notice] 1#1: start worker process 29
+2024/06/08 16:07:03 [notice] 1#1: start worker process 30
+2024/06/08 16:07:03 [notice] 1#1: start worker process 31
+2024/06/08 16:07:03 [notice] 1#1: start worker process 32
+2024/06/08 16:07:03 [notice] 1#1: start worker process 33
+2024/06/08 16:11:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/06/08 16:11:24 [notice] 28#28: gracefully shutting down
+2024/06/08 16:11:24 [notice] 29#29: gracefully shutting down
+2024/06/08 16:11:24 [notice] 29#29: exiting
+2024/06/08 16:11:24 [notice] 30#30: gracefully shutting down
+2024/06/08 16:11:24 [notice] 32#32: gracefully shutting down
+2024/06/08 16:11:24 [notice] 32#32: exiting
+2024/06/08 16:11:24 [notice] 31#31: gracefully shutting down
+2024/06/08 16:11:24 [notice] 31#31: exiting
+2024/06/08 16:11:24 [notice] 33#33: gracefully shutting down
+2024/06/08 16:11:24 [notice] 28#28: exiting
+2024/06/08 16:11:24 [notice] 29#29: exit
+2024/06/08 16:11:24 [notice] 30#30: exiting
+2024/06/08 16:11:24 [notice] 32#32: exit
+2024/06/08 16:11:24 [notice] 31#31: exit
+2024/06/08 16:11:24 [notice] 33#33: exiting
+2024/06/08 16:11:24 [notice] 28#28: exit
+2024/06/08 16:11:24 [notice] 30#30: exit
+2024/06/08 16:11:24 [notice] 33#33: exit
+2024/06/08 16:11:24 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/06/08 16:11:24 [notice] 1#1: worker process 28 exited with code 0
+2024/06/08 16:11:24 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/08 16:11:24 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/06/08 16:11:24 [notice] 1#1: worker process 31 exited with code 0
+2024/06/08 16:11:24 [notice] 1#1: worker process 33 exited with code 0
+2024/06/08 16:11:24 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/08 16:11:24 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/06/08 16:11:24 [notice] 1#1: worker process 32 exited with code 0
+2024/06/08 16:11:24 [notice] 1#1: worker process 29 exited with code 0
+2024/06/08 16:11:24 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/08 16:11:24 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/06/08 16:11:24 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/06/08 16:11:24 [notice] 1#1: worker process 30 exited with code 0
+2024/06/08 16:11:24 [notice] 1#1: exit
+2024/06/08 16:14:56 [notice] 1#1: using the "epoll" event method
+2024/06/08 16:14:56 [notice] 1#1: nginx/1.27.0
+2024/06/08 16:14:56 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/06/08 16:14:56 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/06/08 16:14:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/06/08 16:14:56 [notice] 1#1: start worker processes
+2024/06/08 16:14:56 [notice] 1#1: start worker process 28
+2024/06/08 16:14:56 [notice] 1#1: start worker process 29
+2024/06/08 16:14:56 [notice] 1#1: start worker process 30
+2024/06/08 16:14:56 [notice] 1#1: start worker process 31
+2024/06/08 16:14:56 [notice] 1#1: start worker process 32
+2024/06/08 16:14:56 [notice] 1#1: start worker process 33
+2024/06/08 16:15:11 [error] 31#31: *16 rewrite or internal redirection cycle while internally redirecting to "/var/www/html/", client: 192.168.16.1, server: localhost, request: "GET / HTTP/1.1", host: "0.0.0.0"
+2024/06/08 16:15:12 [error] 31#31: *15 rewrite or internal redirection cycle while internally redirecting to "/var/www/html/", client: 192.168.16.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "0.0.0.0", referrer: "http://0.0.0.0/"
+2024/06/08 16:15:38 [error] 28#28: *25 rewrite or internal redirection cycle while internally redirecting to "/var/www/html/", client: 192.168.16.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "0.0.0.0", referrer: "http://0.0.0.0/index.html"
+2024/06/08 16:15:55 [error] 29#29: *26 rewrite or internal redirection cycle while internally redirecting to "/var/www/html/", client: 192.168.16.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "0.0.0.0", referrer: "http://0.0.0.0/index.html"

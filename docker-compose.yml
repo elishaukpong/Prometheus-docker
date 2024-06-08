@@ -7,7 +7,22 @@ services:
     build:
       context: ./docker/prometheus
     ports:
-      - 9090:9090
+      - ${PROMETHEUS_PORT}:9090
     volumes:
       - './docker/prometheus/config:/etc/prometheus'
       - './docker/prometheus/data:/prometheus'
+
+  nginx-srv-1:
+    env_file:
+      - .env
+    container_name: nginx-srv-1
+    image: 'lb-nginx-srv-1'
+    build:
+      context: ./docker/nginx-srv-1
+    ports:
+      - "${SERVICE_1_PORT}:80"
+    restart: unless-stopped
+    volumes:
+      - "./docker/nginx-srv-1/default.conf:/etc/nginx/conf.d/default.conf"
+      - "./docker/nginx-srv-1/logs/:/var/log/nginx"
+      - "./docker/web/:/var/www/html"
